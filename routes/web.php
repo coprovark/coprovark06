@@ -11,6 +11,15 @@
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+
+
 Route::get('/Hi', function () {
     return view('Hi');
 });
+
+?>
