@@ -19,6 +19,10 @@ Route::get('/hello', function () {
     return view('hello');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
 
 
 // Route::get('/hello', function () {
