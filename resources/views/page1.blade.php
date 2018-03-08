@@ -1,0 +1,1 @@
+<center><h1><a href="/hello">Go to hello</a><h1></center>
