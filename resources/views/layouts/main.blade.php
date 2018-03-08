@@ -4,10 +4,11 @@
     </head>
     <body>
         <center>
-            <a href="/page01">Page01</a>
-            <a href="/page02">Page02</a>
-            <a href="/page03">Page03</a>
-            <a href="/page04">Page04</a>
+            <a href="/page01"> <font size="5" color="" face="PL-EDIT"> Page01 </font></a>
+            <a href="/page02"> <font size="5" color="" face="PL-EDIT"> Page02 </font></a>
+            <a href="/page03"> <font size="5" color="" face="PL-EDIT"> Page03 </font></a>
+            <a href="/page04"> <font size="5" color="" face="PL-EDIT"> Page04 </font></a>
+            <br>
             <hr>
                 <div class="container">
                     @yield('content')

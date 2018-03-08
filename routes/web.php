@@ -23,6 +23,11 @@ Route::get('/hello', function () {
 });
 
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+
 Route::get('/page1', function () {
     return view('page1');
 });
