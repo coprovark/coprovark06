@@ -32,8 +32,17 @@ td {font-family : PL-EDIT;}
                     <input type="radio" name="radio" value="[- -]"><font size="" color="black">อื่นๆ</font>
 				</td>
             </tr>
+			<tr>
+				<td width=""align="center">
+					<font size="5" color="" face="">Password</font>
+				</td>
+				<td>
+					<input type="password" name="password" value="">
+				</td>
+            </tr>
         </table><br>
 		<input type="hidden" name="hidden" value="58181740122">
+		<br>
         <input width="30%" type="submit" value="ส่ง">
 </form>
 <h1><font size="20" color="#ff9900" face="PL-EDIT">แสดงค่า</font></h1>
@@ -41,4 +50,5 @@ td {font-family : PL-EDIT;}
 เพศ     {{ $Sex }}<br>
 ID      {{ $ID }}<br>
 มือถือ    {{ $Phone }}<br>
+pass    {{ $password }}<br>
 @endsection

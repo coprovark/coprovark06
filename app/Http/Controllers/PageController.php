@@ -14,6 +14,7 @@ class PageController extends Controller
         $txt_radio = $rq->input('radio');
         $txt_hidden = $rq->input('hidden');
         $txt_checkbox = $rq->input('checkbox');
+        $txt_password = $rq->input('password');
         // return $radio;
         // echo "ชือ  $txt_name";
         // echo "<br>";
@@ -25,9 +26,22 @@ class PageController extends Controller
             "Namaewa" => $txt_name,
             "Sex" => $txt_radio,
             "ID" => $txt_hidden,
-            "Phone" => $txt_checkbox
+            "Phone" => $txt_checkbox,
+            "password" => $txt_password,
         ];
 
         return view('page.page01',$array);
     }
+
+    public function show_password(Request $rr){
+        return view('page.page11',$rr);
+    }
+
+
+    public function show_select(Request $res){
+        return view('page.page12',$res);
+    }
 }
+
+
+

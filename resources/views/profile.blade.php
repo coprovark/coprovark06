@@ -82,7 +82,8 @@
 				<td width=""></td>
                 <td>P'sam Nattapong</td>
 			</tr>
-		</table><hr>
+		</table>
+        <hr>
 		<br><br>
 		<center>
 		<a href="/page01"><font size="5" color="#ff9900" face="Ninja Naruto"> Page01 </font></a>

@@ -38,7 +38,8 @@ Route::get('/page01', function () {
         "Namaewa" => "",
         "Sex"     => "",
         "ID"      => "",
-        "Phone"   => ""
+        "Phone"   => "",
+        "password" => ""
     ];
     return view('page.page01',$array);
 });
@@ -66,3 +67,15 @@ Route::get('/page10/{id}', function ($id) {
 
     return view('page.page10',$array);
 });
+
+Route::post('/page11', function () {
+
+    $array = [
+        "pass" => "",
+    ];
+
+    return view('page.page11',$array);
+});
+
+Route::post('/page12','PageController@show_select');
+Route::post('/page11','PageController@show_password');

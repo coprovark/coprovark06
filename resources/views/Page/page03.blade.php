@@ -3,5 +3,8 @@
 @section('title', 'Page Title')
 
 @section('content')
-    3333333333333333333333
+<Form action="/page11" target="" method="POST">
+    <input type="password" name="password" value="">
+    <input  type="submit" value="ส่ง">
+</form>
 @endsection
