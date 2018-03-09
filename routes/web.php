@@ -79,3 +79,11 @@ Route::post('/page11', function () {
 
 Route::post('/page12','PageController@show_select');
 Route::post('/page11','PageController@show_password');
+
+Route::get('/form_reg', function () {
+    return view('page.form_reg');
+});
+
+Route::get('/form_login', function () {
+    return view('page.form_login');
+});
