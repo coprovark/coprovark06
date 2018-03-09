@@ -41,6 +41,35 @@ class PageController extends Controller
     public function show_select(Request $res){
         return view('page.page12',$res);
     }
+
+        public function show_login(Request $rs)
+        {
+            $txt_user = $rs->input('user');
+            $txt_pass = $rs->input('pass');
+
+            $array1 = [
+                "user" => $txt_user,
+                "pass" => $txt_pass,
+                
+            ];
+
+            return view('page.form_login',$array1);
+        }
+
+        public function show_input(Request $rin)
+        {
+            $txt_input = $rin->input('input');
+            
+            $array2 = [
+                "IN" => $txt_input,
+                
+            ];
+
+            return view('page.test_form',$array2);
+        }
+    
+
+
 }
 
 

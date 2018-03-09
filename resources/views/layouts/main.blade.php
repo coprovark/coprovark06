@@ -81,6 +81,9 @@
                                 <li>
                                     <a href="/form_reg">สมัครสามชิก</a>
                                 </li>
+                                <li>
+                                    <a href="/test_form">ทดสอบตรวจค่า...</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>

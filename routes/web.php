@@ -32,6 +32,7 @@ Route::get('/page1', function () {
     return view('page1');
 });
 
+Route::post('/page','PageController@show');
 Route::get('/page01', function () {
 
     $array = [
@@ -56,7 +57,7 @@ Route::get('/page04', function () {
     return view('page.page04');
 });
 
-Route::post('/page','PageController@show');
+
 
 
 Route::get('/page10/{id}', function ($id) {
@@ -87,3 +88,26 @@ Route::get('/form_reg', function () {
 Route::get('/form_login', function () {
     return view('page.form_login');
 });
+
+Route::post('/check','PageController@show_login');
+Route::post('/testf','PageController@show_input');
+
+Route::get('/form_login', function () {
+
+    $array1 = [
+        "user" => "",
+        "pass"     => "",
+    ];
+    return view('page.form_login',$array1);
+});
+
+Route::get('/test_form', function () {
+
+    $array2 = [
+        "IN" => "",
+    ];
+    return view('page.test_form',$array2);
+});
+
+
+
