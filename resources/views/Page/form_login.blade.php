@@ -25,20 +25,23 @@
                           </form>
 
 <div class="btn btn-default">
-  Real User = Osasxxx
-  Real Password = 99999 
-</div><br><br>
-<div class="btn btn-default">
   Username   =   {{ $user }}<br>
   Password   =   {{ $pass }}<br>
 </div>
 <?php
-    if($user&&$pass != 'Null')
-        if($user=='Osasxxx'){
-            if($pass=='99999')
-        echo "True"; 
+    if($user&&$pass != 'Null'){
+        if($user=='Osasxxx'&& $pass=='99999')
+        {
+          echo "True"; 
         }
-            else echo "False"
+          else {
+                echo "False";
+               }
+    }  
     ?>
-
+<br><br>
+<div class="btn btn-danger">
+  Real User = Osasxx<br>
+  Real Password = 99999 
+</div>
 @endsection

@@ -58,7 +58,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="/main"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
@@ -86,6 +86,12 @@
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="/profile"><i class="fa fa-dashboard fa-fw"></i> Prefile</a>
+                        </li>
+                        <li>
+                            <a href="/page05"><i class="fa fa-dashboard fa-fw"></i> Basic Calculator</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -98,7 +104,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header"><font size="20" color="#ff9900" face="PL-EDIT">กรอกข้อมูลหน่อยครับ</font></h1>
+                        <h1 class="page-header"><font size="30" color="#0099cc" face="Bangna New">Show Content</font></h1>
                         
                         @yield('content')
 

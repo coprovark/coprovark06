@@ -1,3 +1,8 @@
+@extends('layouts.main')
+
+@section('title', 'Page Title')
+
+@section('content')
 <html>
 <head>
     <style>
@@ -19,7 +24,7 @@
         </table>
         </center>
         <br><hr>
-        <font size="20" color="#ff9900" face="Ninja Naruto"><center>Profile^^</center></font><hr>
+        <font size="20" color="#ff9900" face="Bangna New"><center>Profile^^</center></font><hr>
 		<!-- Resume Detail -->
 		<table border="0" width="100%" bgcolor="">
 			<tr>
@@ -86,7 +91,9 @@
         <hr>
 		<br><br>
 		<center>
-		<a href="/page01"><font size="5" color="#ff9900" face="Ninja Naruto"> Page01 </font></a>
+		<a href="/page01"><font size="5" color="#ff9900" face="Bangna New"> Page01 </font></a>
 		</center>
 	</body>
 </html>
+
+@endsection

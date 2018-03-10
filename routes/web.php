@@ -89,9 +89,9 @@ Route::get('/form_login', function () {
     return view('page.form_login');
 });
 
-Route::post('/check','PageController@show_login');
-Route::post('/testf','PageController@show_input');
 
+
+Route::post('/check','PageController@show_login');
 Route::get('/form_login', function () {
 
     $array1 = [
@@ -101,6 +101,9 @@ Route::get('/form_login', function () {
     return view('page.form_login',$array1);
 });
 
+
+// Route ตัวแรกจะรับค่าที่ post มาจากหน้า test_form (action="testf")
+Route::post('/testf','PageController@show_input');
 Route::get('/test_form', function () {
 
     $array2 = [
@@ -108,6 +111,15 @@ Route::get('/test_form', function () {
     ];
     return view('page.test_form',$array2);
 });
+// Route ตัวแรกจะรับค่าที่ post มาจากหน้า page05 (action="cal")
+Route::post('/cal','PageController@show_cal');
+Route::get('/page05', function () {
 
+    $array05 = [
+        "A" => "",
+        "B" => ""
+    ];
+    return view('page.page05',$array05);
+});
 
 

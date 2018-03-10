@@ -6,7 +6,7 @@
 <style>
   /* คำสั่งกำกับ CSS */
 p { border: 1px solid powderblue;}
-td {font-family : PL-EDIT;}
+td {font-family : Bangna New;}
 </style>
 <Form action="/page" target="" method="POST">
 	<!-- ฟอร์ม1 -->
@@ -17,7 +17,7 @@ td {font-family : PL-EDIT;}
 	</table>
 		<table border="2" width="100%" style="color:blue;">
             <tr>
-				<td width="10%" align="center"><font size="5" color="" face=""> ยี่ห้อมือถือที่ใช้&nbsp;</font>
+				<td width="10%" align="center"><font size="3" color="" face=""> ยี่ห้อมือถือที่ใช้&nbsp;</font>
 				</td>
 				<td width="40%"><input type="checkbox" name="checkbox" value="Iphone"><font size="" color="black">IPhone</font>
 					<input type="checkbox" name="checkbox" value="Somsung"><font size="" color="black">Sumsung</font>
@@ -26,7 +26,7 @@ td {font-family : PL-EDIT;}
             </tr>
 
             <tr>
-				<td width=""align="center"><font size="5" color="" face="">เพศ&nbsp;</font></td>
+				<td width=""align="center"><font size="3" color="" face="">เพศ&nbsp;</font></td>
 				<td><input type="radio" name="radio" value="Men"><font size="" color="black">ชาย</font>
 					<input type="radio" name="radio" value="Women"><font size="" color="black">หญิง</font>
                     <input type="radio" name="radio" value="[- -]"><font size="" color="black">อื่นๆ</font>
@@ -34,7 +34,7 @@ td {font-family : PL-EDIT;}
             </tr>
 			<tr>
 				<td width=""align="center">
-					<font size="5" color="" face="">Password</font>
+					<font size="3" color="" face="">Password</font>
 				</td>
 				<td>
 					<input type="password" name="password" value="">
