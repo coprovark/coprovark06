@@ -58,7 +58,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="/main"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="/form_reg"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
@@ -104,7 +104,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header"><font size="30" color="#0099cc" face="Bangna New">Show Content</font></h1>
+                        <h1 class="page-header"><font size="30" color="#0099cc" face="Bangna New"><b>Show Content</b></font></h1>
                         
                         @yield('content')
 
