@@ -12,19 +12,28 @@
     <p>{{ $obj->id }}</p>
     @endforeach -->
 <form class="form-inline">
-  <div class="form-group">
-    <div class="input-group">
-      <div class="input-group-addon">$</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">
-        <i class="fa fa-search"></i>
-        </button>
-       </span>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-btn">
+            <a href="#">
+                    <button class="btn btn-light" type="button">
+                        <i class="glyphicon glyphicon-plus"></i> Add
+                    </button>
+            </a>   
+            </span>
+            <input type="text" class="form-control" placeholder="Information">  
+                <span class="input-group-btn">
+                <a href="#">
+                    <button class="btn btn-primary" type="button">
+                        <i class="fa fa-search"></i> Search
+                    </button>
+                </a>
+                </span>
+            
+        </div>
     </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Transfer cash</button>
-</form>
+
+</form><br>
 
 <table class="table">
     <tr>
@@ -41,12 +50,29 @@
         <td>{{ $obj->password }}</td>
         <td>{{ $obj->status }}</td>
         <td>
-            <button class="btn btn-danger btn-xs">
-                <span class="glyphicon glyphicon-remove"></span>
-                ลบข้อมูล
-                <button class="btn btn-warning btn-xs">
-                <span class="glyphicon glyphicon-pencil"></span>
-                แก้ไข
+        <!-- <div class="btn-group">
+                <button type="button" class="btn btn-danger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Dropdown <i class="glyphicon glyphicon-chevron-down"></i>
+                </button>
+                
+                <div class="dropdown-menu">
+                <br>
+                <div><a class="dropdown-item" href="#"><P Align=center><i class="glyphicon glyphicon-pencil"></i> Edit</p></a></div>
+                <hr>
+                <div><a class="dropdown-item" href="#"><P Align=center><i class="glyphicon glyphicon-erase"></i> Delete</p></a></div>
+            </div>
+        </div> -->
+            <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <a href="#"><h4><p><ul class="glyphicon glyphicon-pencil"> Edit</ul></p></h4></a>
+                        <hr>
+                        <a href="#"><h4><p><ul class="glyphicon glyphicon-trash"> Delete</ul></p></h4></a>
+                    </ul>
+            </div>
         </td>
     </tr>
     @endforeach

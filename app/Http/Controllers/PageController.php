@@ -126,6 +126,7 @@ class PageController extends Controller
             ['username','=',$res['username']],
             ['password','=',$res['pass']]
         ])->get();
+        //แสดงค่า วนลูปแบบไม่กำหนดจุดจบ ใช้ foreach
         $name ='';
         foreach($users as $value){
             $name = $value->id;
