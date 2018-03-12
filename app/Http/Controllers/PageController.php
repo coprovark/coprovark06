@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\page;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
@@ -42,22 +43,30 @@ class PageController extends Controller
         return view('page.page12',$res);
     }
 
-        public function show_login(Request $rs)
+    public function show_login(Request $rs)
         {
-            $txt_user = $rs->input('user');
+            //ค่าคงที่ สมมุติว่ามาจาก database
+            //ค่าที่รับมา
+            $txt_user = $rs->input('username');
             $txt_pass = $rs->input('pass');
-
-            $array1 = [
-                "user" => $txt_user,
-                "pass" => $txt_pass,
-                
-            ];
-
-            return view('page.form_login',$array1);
+            
+            $users = DB::select('select * from users where username = ? and password = ?', 
+            [$rs['user'],$rs['pass']]
+            );
+            
+            foreach ($users as $value){
+              if($txt_user == $value->username){
+                  if($txt_pass == $value->password){
+                      $data['status'] = "true";
+                  }
+              }          
+            }
+            //ส่งค่าไปแสดงผล
+            return view('page.form_login',['users'=>$users]);
         }
 
         //รับมาจาก testf
-        public function show_input(Request $rin)
+    public function show_input(Request $rin)
         {
             $txt_input = $rin->input('input');
             
@@ -68,7 +77,7 @@ class PageController extends Controller
             return view('page.test_form',$array2);
         }
     
-        public function show_cal(Request $rcal)
+    public function show_cal(Request $rcal)
         {
             $txt_user = $rcal->input('A');
             $txt_pass = $rcal->input('B');
@@ -81,7 +90,50 @@ class PageController extends Controller
 
             return view('page.page05',$array05);
         }
+//แบบ get
+        public function form_check_login(Request $clog)
+        {
+            $users = DB::select('select * from users where username = ? and password = ?', 
+            [$clog['username'],$clog['pass']]
+            );
+            return view('page.form_check_login',['users'=>$users]) ;
+        }
 
+        // public function form_check_login(Request $clg)
+        // {
+        //     $txt_user1 = $clg->input('user');
+        //     $txt_pass1 = $clg->input('pass');
+
+        //     $array06 = [
+        //         "user1" => $txt_user1,
+        //         "pass1" => $txt_pass1,
+                
+        //     ];
+
+        //     return view('page.form_check_login',$array06);
+        // }
+
+    #login 2
+    public function form_login2(Request $res){
+
+        // if($res['username']== 'kssa'){
+        //     $res['username'] = 'True';
+
+        // }else{
+        //     $res['username'] = 'False'; 
+        // }
+        $users = DB::table('users')->where([
+            ['username','=',$res['username']],
+            ['password','=',$res['pass']]
+        ])->get();
+        $name ='';
+        foreach($users as $value){
+            $name = $value->id;
+        }
+        $res['name'] = $name ;
+
+        return view('page.form_login',$res) ;
+    }    
 }
 
 

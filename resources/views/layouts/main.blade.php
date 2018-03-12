@@ -76,7 +76,7 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Sign<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/form_login">เข้าสู่ระบบ</a>
+                                    <a href="/form_login2"><span class="glyphicon glyphicon-use"></span>เข้าสู่ระบบ</a>
                                 </li>
                                 <li>
                                     <a href="/form_reg">สมัครสามชิก</a>
@@ -91,6 +91,12 @@
                         </li>
                         <li>
                             <a href="/page05"><i class="fa fa-dashboard fa-fw"></i> Basic Calculator</a>
+                        </li>
+                        <li>
+                            <a href="/form_check_login"><i class="fa fa-bar-chart-o fa-fw"></i> Check login</a>
+                        </li>
+                        <li>
+                            <a href="/list_users"><i class="fa fa-bar-chart-o fa-fw"></i> รายชื่อสมาชิก</a>
                         </li>
                     </ul>
                 </div>

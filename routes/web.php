@@ -91,14 +91,13 @@ Route::get('/form_login', function () {
 
 
 
-Route::post('/check','PageController@show_login');
+Route::post('/form_login','PageController@show_login');
 Route::get('/form_login', function () {
 
-    $array1 = [
-        "user" => "",
-        "pass"     => "",
+    $data = [
+        "users" => [],
     ];
-    return view('page.form_login',$array1);
+    return view('page.form_login',$data);
 });
 
 
@@ -115,11 +114,28 @@ Route::get('/test_form', function () {
 Route::post('/cal','PageController@show_cal');
 Route::get('/page05', function () {
 
-    $array05 = [
-        "A" => "",
-        "B" => ""
-    ];
+    $array05 = ["A" => "",
+                "B" => ""];
     return view('page.page05',$array05);
 });
 
+Route::post('/form_check_login','PageController@form_check_login');
+Route::get('/form_check_login', function () {
 
+    $data = [
+        "users" => [],
+    ];
+    return view('page.form_check_login',$data);
+});
+
+//สั่งให้ controller คำนวน
+Route::post('/form_login2','PageController@form_login2');
+
+#แสดงหน้าเว็บ
+Route::get('/form_login2', function () {
+    $array = ['username'=>'',
+              'name' => ''];
+    return view('page.form_login',$array);
+});
+#list user
+Route::get('/list_users','UsersController@list_users');
