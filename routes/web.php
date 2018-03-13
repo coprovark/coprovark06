@@ -139,3 +139,12 @@ Route::get('/form_login2', function () {
 });
 #list user
 Route::get('/list_users','UsersController@list_users');
+Route::post('/list_users_find','UsersController@list_users_find');
+
+// Route::get('delete_user/{id}', function ($id) {
+//     return 'User ='.$id;
+// }); รันในหน้าตัวเอง
+
+Route::get('/delete_user/{id}','UsersController@delete_users');
+
+Route::post('/form_register_save','UsersController@form_register_save');
