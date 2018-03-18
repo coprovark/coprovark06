@@ -35,18 +35,18 @@
 
 <table class="table">
     <tr>
-        <td>ID</td>
-        <td>Username</td>
-        <td>Password</td>
-        <td>Status</td>
+        <td>รหัสนักศึกษา</td>
+        <td>ชื่อ-สกุล</td>
+        <td>วัน เดือน ปีเกิด</td>
+        <td>สังกัดคณะ</td>
         <td>Operation</td>
     </tr>
     @foreach($data_list as $obj)
     <tr>
-        <td>{{ $obj->id }}</td>
-        <td>{{ $obj->username }}</td>
-        <td>{{ $obj->password }}</td>
-        <td>{{ $obj->status }}</td>
+        <td>{{ $obj->sid }}</td>
+        <td>{{ $obj->fullName }}</td>
+        <td>{{ $obj->birthDay }}</td>
+        <td>{{ $obj->facultyID }}</td>
         <td>
                 <button class="btn btn-danger btn-xs" onclick="return _confirm('{{ $obj->id }}')">
                     <span class="glyphicon glyphicon-remove"></span>  

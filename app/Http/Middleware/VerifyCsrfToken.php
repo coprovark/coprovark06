@@ -12,7 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        '*','form_register_save','list_users_find'
+        '*','form_register_save','list_users_find','formx'
     ];
 
 }

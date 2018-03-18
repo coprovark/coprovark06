@@ -34,13 +34,6 @@
                                 <input type="radio" name="sex" value="men"><font size="" color="">ชาย</font>
                                 <input type="radio" name="sex" value="women"><font size="" color="">หญิง</font>
                             </div>
-
-                        <!-- div วันเเกิด -->
-                        <div class="form-group">
-                                <label>วัน เดือน ปีเกิด</label>
-                                <input type="date" class="form-control" name="birthDay" placeholder="+66">
-                              </div>
-
                         <!-- div เบอร์ -->
                             <div class="form-group">
                                 <label for="Tell">เบอร์โทร</label>

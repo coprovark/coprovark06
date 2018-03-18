@@ -148,3 +148,9 @@ Route::post('/list_users_find','UsersController@list_users_find');
 Route::get('/delete_user/{id}','UsersController@delete_users');
 
 Route::post('/form_register_save','UsersController@form_register_save');
+
+
+
+Route::get('/formx', function () {
+        return view('page.formx');
+});
