@@ -7,14 +7,14 @@
                                         <!-- div sid -->
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="form-group">
+                                <div class="form-inline">
                                    <label for="Tell">รหัสนักศึกษา</label>
                                    <input type="int" class="form-control" name="sid" placeholder="">
-                                </div>
+                                </div> <br>
                             
 
                         <!-- div คำนำหน้า -->
-                                <div class="form-group">
+                                <div class="form-inline">
                                     <label for="Sirname" >คำนำหน้าชื่อ</label>
                                     <select name="titleName" class="form-control" placeholder="-คำนำหน้าชื่อ-">
                                             <option value="0">-คำนำหน้าชื่อ-</option>
@@ -24,17 +24,14 @@
                                         </select>
                                     </div>
                             </div>
-                        </div>
+                        </div><br>
 
                         <!-- div fullname -->
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <label >ชื่อ-สกุล</label>
-                                    <input type="char" class="form-control" name="fullName" placeholder="ชื่อ-สกุล">
-                                </div>
-                            </div>
-                        </div>
+                                <div class="form-inline">
+                                    <label >ชื่อ-สกุล   </label>
+                                    <input type="char" class="form-control" name="fullName" placeholder="ชื่อ-สกุล" size="50%">
+                                </div><br>
+
 
                         <!-- div เพศ-->
                         <div class="form-group">
@@ -99,7 +96,7 @@
                         <!-- div เบอร์ -->
                         <div class="form-group">
                                 <label for="Tell">เบอร์โทร</label>
-                                <input type="char" class="form-control" name="mobile" placeholder="+66">
+                                <input type="char" class="form-control" name="mobile" placeholder="+66" size="50%">
                               </div>
                     
                         <div class="form-group">
