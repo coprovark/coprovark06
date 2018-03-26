@@ -4,13 +4,21 @@
 <style>
 
 	td{
-        border:1px solid #ff8c1a;
-        font-family : TH SarabunPSK;
-        font-size : 20px;
-    }
+                border:1px solid #gray;
+                font-family : TH SarabunPSK;
+                font-size : 20px;
+        }
+        lable{
+                font-family : TH SarabunPSK; 
+                font-size : 20px;
+        }
+        div{
+                font-family : TH SarabunPSK; 
+                font-size : 20px;
+        }
 </style>
 
- <h3 class="page-header">ใบสมัคร</h3>
+ <h2 class="page-header">ใบสมัคร</h2>
 
 
          <div class="container-fluid" style="border:1px solid black;border-radius: 0px 0px 0px 0px;"> 
@@ -21,7 +29,7 @@
              <div class="container-fluid">
                 <div class="row">  
                     <div class="col-md-3">
-                       <label style="padding : 15%;background-color:#b3c6ff;">CO-PROVARK</label><br>
+                       <label style="padding : 15%;background-color:gray; color:white;">CO-PROVARK</label><br>
 
                        <label>เลขที่ NO.</label>
                          <input type="text" class="form-control" style="width:55%;" name="NAME" > <br><br>
@@ -32,7 +40,7 @@
                      <center>
                     <div class="col-md-6" style="">      
                            <div class="form-group">
-                                <br><h4>ใบสมัครเข้าร่วมโครงการวิจัย</h4>
+                                <br>ใบสมัครเข้าร่วมโครงการวิจัย
                                 <br>เรื่อง
                                 <br>การพัฒนารูปแบบการส่งเสริมศักยภาพผู้ผลิตซอฟต์แวร์และบริการซอฟแวร์โดยใช้
                                 <br>เทคนิคการโคชชิ่งตามสไตล์การเรียนรู้แบบ VARK เพื่อให้สอดคล้องกับความต้อง
@@ -54,9 +62,9 @@
             </div>    <!-- class="container" -->
             <hr>
             <div class="row">
-            <div class="container-fluid" style=";background-color:#b3c6ff;">    
+            <div class="container-fluid" style=";background-color:gray;">    
                 <div class="col-md-12" style="">
-                     <label>ประวัติส่วนตัว</label><br>  
+                     <center><label style="color:white;">ประวัติส่วนตัว</label></center>
                 </div>
                 </div>
             </div>

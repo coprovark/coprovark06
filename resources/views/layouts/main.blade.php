@@ -64,28 +64,22 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> ข้อมูลพื้นฐาน<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/form_login2"><span class="glyphicon glyphicon-use"></span>กำหนดผู้ใช้งาน</a>
+                                    <a href="/form_user"><span class="glyphicon glyphicon-use"></span>กำหนดผู้ใช้งาน</a>
                                 </li>
                                 <li>
-                                    <a href="/form_reg">คำนำหน้าชื่อ</a>
+                                    <a href="/form_title">คำนำหน้าชื่อ</a>
                                 </li>
                                 <li>
-                                    <a href="/test_form">สถานะ</a>
+                                    <a href="/form_type">ประเภท</a>
                                 </li>
                                 <li>
-                                    <a href="/test_form">เชื้อชาติ</a>
+                                    <a href="/form_gender">เพศ</a>
                                 </li>
                                 <li>
-                                    <a href="/test_form">สัญชาติ</a>
+                                    <a href="/form_faculty">คณะ</a>
                                 </li>
                                 <li>
-                                    <a href="/test_form">ศาสนา</a>
-                                </li>
-                                <li>
-                                    <a href="/test_form">ประเภทนักศึกษา</a>
-                                </li>
-                                <li>
-                                    <a href="/test_form">คณะ</a>
+                                    <a href="/form_personal">personal</a>
                                 </li>
                                 <li>
                                     <a href="/slide_pic">อัลบั้ม</a>
