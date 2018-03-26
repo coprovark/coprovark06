@@ -12,7 +12,7 @@
     <title>webapp</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    //<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="css/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -39,7 +39,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <div class="container-fluid" style="background:linear-gradient(white,#e6e6e6);">
                 <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                </div>
             </div>
             <!-- /.navbar-header -->
 
@@ -57,6 +59,43 @@
                             </div>
                             <!-- /input-group -->
                         </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> ข้อมูลพื้นฐาน<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="/form_login2"><span class="glyphicon glyphicon-use"></span>กำหนดผู้ใช้งาน</a>
+                                </li>
+                                <li>
+                                    <a href="/form_reg">คำนำหน้าชื่อ</a>
+                                </li>
+                                <li>
+                                    <a href="/test_form">สถานะ</a>
+                                </li>
+                                <li>
+                                    <a href="/test_form">เชื้อชาติ</a>
+                                </li>
+                                <li>
+                                    <a href="/test_form">สัญชาติ</a>
+                                </li>
+                                <li>
+                                    <a href="/test_form">ศาสนา</a>
+                                </li>
+                                <li>
+                                    <a href="/test_form">ประเภทนักศึกษา</a>
+                                </li>
+                                <li>
+                                    <a href="/test_form">คณะ</a>
+                                </li>
+                                <li>
+                                    <a href="/slide_pic">อัลบั้ม</a>
+                                </li>
+                                <li>
+                                    <a href="/list_user_edit">list_user_edit</a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <li>
                             <a href="/form_reg"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
@@ -110,8 +149,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header"><font size="30" color="#0099cc" face="Bangna New"><b>Show Content</b></font></h1>
-                        
+                    <div class="container-fluid" style="background:linear-gradient(#ebebe0,white);">
+                        <h3 class="page-header"><font size="18" color="black" face="TH SarabunPSK"><b><center>Show Content</center></b></font></h3>
+                    </div>
+                    <br>
                         @yield('content')
 
                     </div>

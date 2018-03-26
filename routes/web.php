@@ -148,9 +148,40 @@ Route::post('/list_users_find','UsersController@list_users_find');
 Route::get('/delete_user/{id}','UsersController@delete_users');
 
 Route::post('/form_register_save','UsersController@form_register_save');
+Route::post('/form_register_save2','UsersController@form_register_save2');
 
 
 
 Route::get('/formx', function () {
         return view('page.formx');
+});
+
+
+Route::get('/view_users','UsersController@view_users');
+Route::post('/view_users_find','UsersController@view_users_find');
+
+Route::get('/form_users', function () {
+    return view('page.form_users');
+});
+
+//List user edit//
+Route::get('/list_user_edit/{id}','UsersController@list_user_edit');
+Route::get('/list_user_edit', function () {
+    return view('page.list_user_edit');
+});
+
+Route::get('/newx', function () {
+    return view('page.newx');
+});
+
+Route::get('/slide_pic', function () {
+    return view('page.slide_pic');
+});
+
+Route::get('/resume', function () {
+    return view('page.copro_resume.resume');
+});
+
+Route::get('/form_resume', function () {
+    return view('page.copro_resume.form_resume');
 });

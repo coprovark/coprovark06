@@ -1,1 +1,0 @@
-<br><center><h1>{{$password}}<h1></center>

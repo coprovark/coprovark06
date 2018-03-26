@@ -68,4 +68,76 @@ class UsersController extends Controller
     //    return $req;
 
     }
+
+
+
+    public function view_users()
+    {
+        $find='';
+        $users = DB::table('tb_resume')->select('*')->get();
+        return view('page.view_users',[
+            'data_list'=>$users,
+            'find'     =>$find
+        ]);
+    }
+
+    public function view_users_find(Request $req)
+    {
+        $find=$req->find;
+        $users = DB::table('tblusers')
+                            ->select('*')
+                            ->where('user_id','=',$find)
+                            ->get();
+        return view('page.view_users',[
+            'data_list'=>$users,
+            'find'     =>$find
+        ]);
+    }
+
+    public function form_register_save2(Request $req){
+
+        $status = DB::table('tblusers')->insert(
+          [
+
+            'user_code'  => $req->user_code,
+            'user_name'  => $req->user_name,
+            'user_password'  => $req->user_password,
+            'user_level'  => $req->user_level,
+            'user_enable'  => $req->user_enable
+          ]
+        );
+        if($status){
+           return redirect('view_users');
+        }else{
+           return "เกิดข้อผิดพลาด";
+        }
+    }
+
+    public function list_user_edit(Request $req){
+        $find = $req->id;
+        $user = DB::table('users')
+                         ->select('*')
+                         ->where('id','=',$find)
+                         ->get();
+        return view('page.list_user_edit',[
+                'user'=>$user
+        ]);
+    }
+
+    public function list_user_update(Request $req){
+        $user_code      = $req->user_code;
+        $user_name      = $req->user_name;
+        $user_password  = $req->user_password;
+        $data = [
+            'username'=>$user_name,
+            'password'=>$user_password,
+        ];
+        $status = DB::table('users')
+                    ->where('id', $user_code)
+                    ->update($data);
+        return redirect('list_users');
+    }
+
+    
+
 }
