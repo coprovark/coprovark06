@@ -29,10 +29,10 @@
              <div class="container-fluid">
                 <div class="row">  
                     <div class="col-md-3">
-                       <label style="padding : 15%;background-color:gray; color:white;">CO-PROVARK</label><br>
+                       <label style="padding : 15%;background-color:gray; color:white;">CO-PROVARK</label><br><br>
 
                        <label>เลขที่ NO.</label>
-                         <input type="text" class="form-control" style="width:55%;" name="NAME" > <br><br>
+                         <input type="text" class="form-control" style="width:55%;" name="NAME" > <br>
                                         
                       <label>วันที่ Date</label>
                         <input class="form-control" style="width:55%;" type="text" name="DAY">
@@ -47,7 +47,7 @@
                                  <br>การของผู้ประกอบการและอุตสสาหกรรมซอฟแวร์
                             </div>
                      </div>     
-                <div class="col-md-3" style=" padding: 10px; width: 100px; margin: 50px 10px 10px 60px; border: 1px solid #b3c6ff;">
+                <div class="col-md-3" style=" padding: 10px; width: 100px; margin: 40px 10px 10px 60px; border: 1px solid #b3c6ff;">
                                         <div class="form-group">
                                         <br>
                                         ขนาดรูปถ่าย

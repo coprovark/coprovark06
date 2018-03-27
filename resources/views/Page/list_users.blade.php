@@ -54,8 +54,8 @@
                 </button>
         
                 <button class="btn btn-warning btn-xs">
-                    <span class="glyphicon glyphicon-pencil"></span>  
-                     แก้ไข
+                
+                <a href="/list_user_edit/{{ $obj->id }}" class="btn btn-danger">แก้ไข</a>
                 </button>
             <!-- <div class="dropdown">
                 <button class="btn btn-danger dropdown-toggle btn-sm" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

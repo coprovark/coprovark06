@@ -58,29 +58,6 @@ Route::get('/page04', function () {
 });
 
 
-
-
-Route::get('/page10/{id}', function ($id) {
-
-    $array = [
-        "ID" => $id
-    ];
-
-    return view('page.page10',$array);
-});
-
-Route::post('/page11', function () {
-
-    $array = [
-        "pass" => "",
-    ];
-
-    return view('page.page11',$array);
-});
-
-Route::post('/page12','PageController@show_select');
-Route::post('/page11','PageController@show_password');
-
 Route::get('/form_reg', function () {
     return view('page.form_reg');
 });
