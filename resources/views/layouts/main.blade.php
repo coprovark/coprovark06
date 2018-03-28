@@ -14,14 +14,14 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ URL::asset('asset/css/bootstrap/css/bootstrap.min.css') }}">
 
-<!-- MetisMenu CSS -->
-<link rel="stylesheet" href="{{ URL::asset('asset/css/metisMenu/metisMenu.min.css') }}">
+    <!-- MetisMenu CSS -->
+    <link rel="stylesheet" href="{{ URL::asset('asset/css/metisMenu/metisMenu.min.css') }}">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="{{ URL::asset('asset/css/sb-admin-2.css') }}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ URL::asset('asset/css/sb-admin-2.css') }}">
 
-<!-- Custom Fonts -->
-<link rel="stylesheet" href="{{ URL::asset('asset/css/font-awesome/css/font-awesome.min.css') }}">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ URL::asset('asset/css/font-awesome/css/font-awesome.min.css') }}">
 
 
 </head>
@@ -130,6 +130,9 @@
                         </li>
                         <li>
                             <a href="/list_users"><i class="fa fa-bar-chart-o fa-fw"></i> รายชื่อสมาชิก</a>
+                        </li>
+                        <li>
+                            <a href="/upload"><i class="fa fa-bar-chart-o fa-fw"></i>File upload</a>
                         </li>
                     </ul>
                 </div>

@@ -3,25 +3,32 @@
 @section('content')
 
 <div class="container-fluid" style="background:linear-gradient(white,#e6e6e6);">
-    <h3><img src="/icon/notes.png"> กำหนดข้อมูลผู้ใช้งาน</h3>
+    <h3><img src=""> กำหนดข้อมูลผู้ใช้งาน</h3>
 </div>
 <br>
-
+<!-- $user มาจากคอนโทรลเลอร์ ส่วน $users คือเอาไว้วิ่งในหน้านี้ -->
 @foreach($user as $users):
 <form action="/list_user_update" method="post">
     <!-- รหัสนักศึกษา -->
+    
+    <div class="form-group form-inline">
+        <label class="col-sm-3">user_id</label>
+        <input type="int" value="{{ $users->user_id }}" class="form-control" style="width:70%" placeholder="รหัสนักศึกษา" name="user_id" >
+    </div>
+    
+    
     <div class="form-group form-inline">
         <label class="col-sm-3">user_code</label>
-        <input type="text" value="{{ $users->id }}" class="form-control" style="width:70%" placeholder="รหัสนักศึกษา" name="user_code" >
+        <input type="int" value="{{ $users->user_code }}" class="form-control" style="width:70%" placeholder="รหัสนักศึกษา" name="user_code" >
     </div>
 
     <div class="form-group form-inline">
         <label class="col-sm-3">user_name</label>
-        <input type="text" value="{{ $users->username }}" class="form-control" style="width:70%" placeholder="รหัสนักศึกษา" name="user_name" >
+        <input type="text" value="{{ $users->user_name }}" class="form-control" style="width:70%" placeholder="รหัสนักศึกษา" name="user_name" >
     </div>
     <div class="form-group form-inline">
         <label class="col-sm-3">user_password</label>
-        <input type="text" value="{{ $users->password }}"  class="form-control" style="width:70%" placeholder="รหัสนักศึกษา" name="user_password" >
+        <input type="text" value="{{ $users->user_password }}"  class="form-control" style="width:70%" placeholder="รหัสนักศึกษา" name="user_password" >
     </div>
     <!--ระดับการเข้าถึงข้อมูล-->
     <div class="form-group form-inline">

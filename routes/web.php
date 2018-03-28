@@ -253,9 +253,9 @@ Route::get('/form_users', function () {
 
 //List user edit//
 Route::get('/list_user_edit/{id}','UsersController@list_user_edit');
-Route::get('/list_user_edit', function () {
-    return view('page.list_user_edit');
-});
+// Route::get('/list_user_edit', function () {
+//     return view('page.list_user_edit');
+// });
 
 Route::get('/newx', function () {
     return view('page.newx');
@@ -272,3 +272,16 @@ Route::get('/resume', function () {
 Route::get('/form_resume', function () {
     return view('page.copro_resume.form_resume');
 });
+
+Route::post('/list_user_update','UsersController@list_user_update');
+
+///////////////////////////file////////////////////////////////////////////////
+
+//**************************************upload********************************************* */
+// Route::get('/upload1', function () {
+//     return view('file.upload');
+// });
+// Route::post('/uploader','FileController@uploader');
+Route::get('/upload1','FileController@show');
+Route::post('/uploader','FileController@uploader');
+Route::get('/dl/{path}','FileController@dl');
