@@ -39,8 +39,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div class="container-fluid" style="background:linear-gradient(white,#e6e6e6);">
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <div class="container-fluid" style="background:linear-gradient(white); width:1348px;">
+                <a class="navbar-brand" href="index.html" style="color:black;">SB Admin v2.0</a>
                 </div>
             </div>
             <!-- /.navbar-header -->
@@ -145,9 +145,9 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-mg-12">
                     <div class="container-fluid" style="background:linear-gradient(#ebebe0,white);">
-                        <h3 class="page-header"><font size="18" color="black" face="TH SarabunPSK"><b><center>Show Content</center></b></font></h3>
+                        <h3 class="page-header"><font size="10" color="black" face="TH SarabunPSK"><b>Show Content</b></font></h3>
                     </div>
                     <br>
                         @yield('content')
@@ -165,16 +165,17 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="js/jquery/jquery.min.js"></script>
-
+    <script src="{{ URL::asset('asset/js/jquery/jquery.min.js') }}"></script>
+    <!-- {{ URL::asset('asset/js/jquery/jquery.min.js') }} -->
     <!-- Bootstrap Core JavaScript -->
-    <script src="css/bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="{{ URL::asset('asset/css/bootstrap/js/bootstrap.min.js') }}"></script>
+    <!-- {{ URL::asset('css/bootstrap/js/bootstrap.min.js') }} -->
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="css/metisMenu/metisMenu.min.js"></script>
-
+    <script src="{{ URL::asset('asset/css/metisMenu/metisMenu.min.js') }}"></script>
+    <!-- {{ URL::asset('css/metisMenu/metisMenu.min.js') }} -->
     <!-- Custom Theme JavaScript -->
-    <script src="js/sb-admin-2.js"></script>
+    <script src="{{ URL::asset('asset/js/sb-admin-2.js') }}"></script>
+    <!-- {{ URL::asset('asset/js/sb-admin-2.js') }} -->
 
 </body>
 

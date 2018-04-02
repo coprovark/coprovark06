@@ -81,7 +81,7 @@
         @endforeach
     </table>
  
-    <script>
+<script>
     function _confirm(id){
         if(confirm('ยืนยันการลบข้อมูล')){
             window.location.href = '/delete_user/'+id;

@@ -283,5 +283,9 @@ Route::post('/list_user_update','UsersController@list_user_update');
 // });
 // Route::post('/uploader','FileController@uploader');
 Route::get('/upload1','FileController@show');
-Route::post('/uploader','FileController@uploader');
-Route::get('/dl/{path}','FileController@dl');
+Route::post('/upload1','FileController@upload1');
+Route::get('/dl/{path}/{name}','FileController@dl');
+Route::get('/rm/{ID}','FileController@rm');
+Route::get('/ed/{ID}','FileController@ed');
+Route::post('/update1','FileController@update1');//edit
+Route::post('api/delete','FileController@deleteItem');//CheckAll delete
